@@ -24,29 +24,37 @@
             extend: {
               colors: {
                 primary: '#FFDC26',
+                nav_bg:'#FFF9F4',
+                t_banner:'#111111',
+                card:'#F9DF8A'
+                
               }
             }
           }
         }
       </script>
     <style>
-        .font-adlam-display {
+        .font-adlam-display{
             font-family: "ADLaM Display", system-ui;
         }
         .font-sora {
             font-family: "Sora", sans-serif;
         }
+
+
+
+
     </style>
 </head>
-<body>
+<body class="font-sora">
     <!-- Header -->
-     <header class="md:container md:mx-auto">
-        <nav class=" font-sora">
-            <div class="navbar bg-base-100 shadow-sm">
+     <header class="">
+        <nav class=" bg-nav_bg  font-sora">
+            <div class="navbar md:container md:mx-auto">
                 <div class="navbar-start">
                     <img src="c1-assets/logo-header.png" alt="">
                     <div class="sm:flex hidden">
-                        <a class="btn btn-ghost text-xl font-adlam-display block">Browse4Pets</a>
+                        <a class="btn btn-ghost text-xl  block">Browse<span class="text-primary">4</span>Pets</a>
                     </div>
                 </div>
     
@@ -82,11 +90,46 @@
                 </div>
             </div>
         </nav>
+
+        <section class=" mt-20 md:container md:mx-auto">
+            <div class="flex flex-col lg:flex-row gap-0">
+                <div class="text container ">
+                    <h1 class="font-adlam-display text-6xl animate-pulse">Pamper Your Pet, Because They Deserve the Bes</h1>
+                <p class="mt-4">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="btn w-40 h-11  bg-primary text-black mt-6">Register</button>
+                </div>
+                <div class="relative -left-40 top-20 -z-10 ">
+                    <img src="c1-assets/cat-big.png" alt="">
+                </div>
+                
+
+            </div>
+        </section>
+
      </header>
     
 
     <!-- Main -->
 
+    <section class="mt-36">
+        <h1 class="font-adlam-display text-4xl mb-12">Browse By Categories</h1>
+
+        <div>
+            <div class="gap-3 bg-card w-52 h-64 rounded-xl flex flex-col justify-center  text-center">
+                <div class="self-center">
+                    <img src="c1-assets/dog-cartoon.png" alt="">
+                </div>
+                <h1 class="text-xl font-bold ">
+                    Dog
+                </h1>
+                <p>
+                    3 items
+                </p>
+            </div>
+        </div>
+
+    </section>
+    
     <!-- Footer -->
 </body>
 </html>
